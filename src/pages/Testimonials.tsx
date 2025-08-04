@@ -9,7 +9,6 @@ const Testimonials = () => {
       name: 'Femi Adebayo',
       role: 'CEO',
       company: 'Shoplink Africa',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
       quote: 'Iles360 completely transformed our online presence. From our website to local visibility, the results were beyond our expectations.',
       rating: 5,
       project: 'Website Development & SEO'
@@ -19,7 +18,6 @@ const Testimonials = () => {
       name: 'Maryam Yusuf',
       role: 'Founder',
       company: 'The Digital Plug',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400',
       quote: 'They built our funnel from scratch, optimized it for conversion, and set up our GMB. Highly recommended!',
       rating: 5,
       project: 'Funnel Building & GMB Setup'
@@ -29,7 +27,6 @@ const Testimonials = () => {
       name: 'Dr. Tobi Lawal',
       role: 'Brand Strategist',
       company: 'Bravedge Studio',
-      image: 'https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=400',
       quote: 'Their design and execution were flawless. The website they built is stunning and user-focused.',
       rating: 5,
       project: 'UI/UX Design & Development'
@@ -92,12 +89,10 @@ const Testimonials = () => {
 
               {/* Client Info */}
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                <div className="w-12 h-12 bg-skyblue/10 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-skyblue font-bold text-lg">
+                    {testimonial.name.charAt(0)}
+                  </span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-navy">{testimonial.name}</h4>
