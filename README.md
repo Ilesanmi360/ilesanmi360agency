@@ -105,7 +105,7 @@ The project is ready for deployment on Netlify:
 ## Contact Information
 
 **Iles360**
-- Location: Ilesanmi Junction, Unilorin Road, Tanke, Ilorin, Kwara State
+- Location: Ilesanmi Junction, Unilorin Road, Tanke, Ilorin, Kwara State.
 - Email: info@iles360.com
 - Phone: +234 (0) 123 456 7890
 
