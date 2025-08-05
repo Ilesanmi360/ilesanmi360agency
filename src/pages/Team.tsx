@@ -20,11 +20,18 @@ const Team = () => {
 
   const fetchTeamMembers = async () => {
     try {
+      // Check if Supabase is properly configured
+      if (!import.meta.env.VITE_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URL === 'https://placeholder.supabase.co') {
+        // Use fallback data immediately
+        setTeamMembers(fallbackTeamData);
+        setLoading(false);
+        return;
+      }
+
       const { data, error } = await supabase
         .from('team_members')
         .select('*')
         .order('created_at', { ascending: true });
-
       if (error) {
         console.error('Error fetching team members:', error);
         // Use fallback data if Supabase is not connected

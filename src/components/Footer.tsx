@@ -10,11 +10,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <img 
-                src="/public/Iles360.png" 
-                alt="Iles360" 
-                className="h-12 w-auto mr-3 brightness-110 contrast-125"
-              />
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-skyblue to-cyan-400 rounded-lg flex items-center justify-center mr-3">
+                  <span className="text-white font-bold text-xl">I</span>
+                </div>
+                <span className="text-3xl font-bold text-white">Iles360</span>
+              </div>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Digital Solutions. Full Circle. We provide comprehensive digital services 
