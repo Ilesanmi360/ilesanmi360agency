@@ -9,14 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-skyblue to-cyan-400 rounded-lg flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-xl">I</span>
-                </div>
-                <span className="text-3xl font-bold text-white">Iles360</span>
-              </div>
-            </div>
+            <Link to="/" className="inline-block mb-4">
+              <img
+                src="/Iles360.png"
+                alt="Iles360 Logo - Digital Solutions Full Circle"
+                className="h-12 w-auto hover:scale-105 transition-transform duration-300 brightness-0 invert"
+              />
+            </Link>
             <p className="text-gray-300 mb-4 max-w-md">
               Digital Solutions. Full Circle. We provide comprehensive digital services 
               to help your business thrive in the digital landscape.

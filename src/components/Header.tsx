@@ -34,12 +34,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="flex items-center">
-              <div className="w-10 h-10 bg-gradient-to-r from-skyblue to-cyan-400 rounded-lg flex items-center justify-center mr-2">
-                <span className="text-white font-bold text-lg">I</span>
-              </div>
-              <span className="text-2xl font-bold text-navy">Iles360</span>
-            </div>
+            <img
+              src="/Iles360.png"
+              alt="Iles360 Logo - Digital Solutions Full Circle"
+              className="h-10 w-auto hover:scale-105 transition-transform duration-300"
+            />
           </Link>
 
           {/* Desktop Navigation */}
